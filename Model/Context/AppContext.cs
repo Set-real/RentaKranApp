@@ -1,6 +1,9 @@
-﻿namespace RentaKranApp.Model.Context
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace RentaKranApp.Model.Context
 {
-    public class DbContext
+    public class AppContext: DbContext
     {
+
     }
 }

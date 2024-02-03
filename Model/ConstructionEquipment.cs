@@ -8,5 +8,8 @@
         public string FactoryNumber { get; set; }
         public DateTime CretionDate { get; set; }
         public DateTime MaintenanceDate { get; set; }
+        public string Images { get; set; }
+        public string Price { get; set; }
+
     }
 }
