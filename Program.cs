@@ -1,11 +1,12 @@
 using Microsoft.EntityFrameworkCore;
+using RentaKranApp.Model.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 
 string connetion = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<AppContext>(options => options.UseSqlServer(connetion));
+builder.Services.AddDbContext<RentaKranDBContext>(options => options.UseSqlServer(connetion));
 
 var app = builder.Build();
 
