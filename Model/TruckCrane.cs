@@ -9,6 +9,9 @@
         public double Rent { get; set; }
         public int LoadCapacity { get; set; }
         public int BoomLength { get; set; }
-        public string Img { get; set; }
+        public string Img { get; set; }        
+
+        // Одни ко многим, пользователь может заказать несколько кранов
+        public User User { get; set; }
     }
 }

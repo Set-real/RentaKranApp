@@ -10,5 +10,8 @@
         public int LoadCapacity { get; set; }
         public int EnginePower { get; set; }
         public string Img { get; set; }
+
+        // Одни ко многим, у пользователя может быть много различной техники
+        public User User { get; set; }
     }
 }

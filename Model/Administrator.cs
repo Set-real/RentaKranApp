@@ -1,6 +1,6 @@
 ﻿namespace RentaKranApp.Model
 {
-    public class Admin
+    public class Administrator
     {
         public Guid Id { get; set; } = Guid.NewGuid();
         public string JobTitle { get; set; }

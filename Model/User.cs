@@ -9,5 +9,10 @@
         public string Password { get; set; }
         public DateTime CreationDate { get; set; }
         public DateTime UserBirthday { get; set; }
+
+        // Один ко многим, у прльзователя может быть несколько комментариев, кранов или различной техники
+        public List<OtherEquipment> OtherEquipments { get; set; }
+        public List<TowerCrane> TowerCranes { get; set;}
+        public List<TruckCrane> TruckCranes { get; set; }
     }
 }

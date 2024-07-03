@@ -12,5 +12,8 @@
         public int BoomLength { get; set; }
         public int FreeStandingCraneHeight { get; set; }
         public string Img { get; set; }
+
+        // Один ко многим, у пользователся может быть несколько кранов
+        public User User { get; set; }
     }
 }
